@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #F9A826;
+  --dark-gray: #6b7280;
+  --light-gray: #f9fafb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===  SPACES ===== */
+
+.margin-md {
+  margin: 2rem;
+}
+
+.margin-sm {
+  margin: 1rem;
+}
+
+/* === max-width ==== */
+
+.max-width-lg {
+  max-width: 900px;
+}
+
+.max-width-md {
+  max-width: 600px;
+}
+
+/* ==== containers === */
+
+.container-center {
+  margin: auto;
+}
+
+.container-fluid {
+  background: var(--light-gray);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+/* ==== links ===== */
+
+.link {
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  color: white;
+  display: block;
+  max-width: 120px;
+  text-align: center;
+  margin: 1rem;
+
+  border-radius: 0.25rem;
+}
+
+.link-secondary {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  display: block;
+  max-width: 120px;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* === lists ====== */
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+}
+
+/* ====== navigation ======= */
+
+.navigation {
+  background-color: #F9A826;
+  padding: 1.25rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  color: black;
+  box-shadow: 0 10px 10px rgba(146, 161, 176, 0.15);
+}
+
+.nav-brand {
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.nav-pills {
+  text-align: right;
+}
+
+.nav-link {
+  color: black;
+}
+
+.link-active {
+  font-weight: bold;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/* ====== header ====== */
+
+.header {
+  margin-top: 5rem;
+  height: 70vh;
+}
+
+.header-image {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+  margin-bottom:2rem;
+}
+
+.header-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary-color);
+  margin: 1rem;
+}
+
+.header-subheading {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+.section {
+  padding: 3rem 2rem 6rem 2rem;
+  margin-top: 5rem;
+}
+
+/* about section */
+.about {
+  background: var(--light-gray);
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.section-info {
+  font-size: 1.25rem;
+}
+
+.about-bullets {
+  margin: 1rem;
+}
+
+/* project section */
+
+.project-card {
+  padding: 1.3rem;
+  margin: 1rem;
+  box-shadow: 25px #c8d1e2;
+  background: white;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+
+  box-shadow: 0 1px 25px #e5e7eb;
+}
+
+.project-image {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.project-heading {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 100;
+}
+
+.project-info {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+}
+
+.link-primary,
+.link-secondary {
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* ==== footer  =====*/
+
+.footer {
+  background-color: #F9A826;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+
+  box-shadow: 0 1px 25px #e5e7eb;
+  height: 15vh;
+}
+
+.footer-header {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer .link {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.footer-icon {
+  width: 3rem;
+}
+
+@media (max-width: 800px) {
+  .about-image {
+    display: none;
+  }
+
+  .about-bullets {
+    font-size: 1.1rem;
+  }
+}
